@@ -1,0 +1,30 @@
+user_whitelist:
+  - 6993100747  # 用户 ID 示例
+  - 987654321  # 用户 ID 示例
+  - 7810961891
+  - 8187900488
+
+group_whitelist:
+  - 6993100747 # 群聊 ID 示例
+  - -1002526520083   # 群聊 ID 示例
+
+deepseek:
+  api_url: "https://api.deepseek.com"
+  api_key: "sk-d0c39ccd0d744610bab03f2567cdc66f"
+  model: deepseek-reasoner  # 可选: deepseek-chat (DeepSeek-V3), deepseek-reasoner (DeepSeek-R1)
+  prompt: 你是一个科研大佬，精通金融量化，计算机，人工智能，机器人领域的各种知识  # 根据需要对角色进行设
+  #prompt: 你是一个可爱的小姐姐，叫小祎，说话要可爱，但不能太夸张  # 根据需要对角色进行设定
+  #prompt: 你是一个暴躁老哥，经常刷百度贴吧，说话时用百度贴吧的常用词汇，用脏话当逗号用  # 根据需要对角色进行设定
+  # prompt: 你是一个性感大姐姐，言语会撩拨，让对方感到暧昧  # 根据需要对角色进行设定
+  enable_reasoning: False  # 是否启用思维链功能，仅在使用 deepseek-reasoner 模型时有效
+  show_reasoning: False   # 是否在回复中显示思维过程，仅在启用思维链功能时有效
+  max_tokens: 2000 # 回复的最大长度
+  temperature: 1.0
+  top_p: 0.9
+  presence_penalty: 0.0
+  frequency_penalty: 0.0
+
+telegram:
+  bot_token: "7626771486:AAFkl7Niv9cohzgJICkA5mjQS2PbvCCb-YU"
+  proxy_url: "http://127.0.0.1:7890"
+  admin_id: 6993100747  # 启动时发消息到你的ID
